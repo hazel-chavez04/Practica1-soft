@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?&family=Redressed&family=Satisfy&family=Nunito+Sans:wght@200&family=Open+Sans:wght@300");
+:root{
+    --color-primario: #845EC2;
+    --color-primario2: #00C9A7;
+    --color-secundario:#F3C5FF;
+    --color-secundario2: #FEFEDF;
+    --color-blanco: #ffff;
+    --fuente-primaria: 'Satisfy', cursive;
+    --fuente-primaria1: sans-serif;
+}
