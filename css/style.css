@@ -1,52 +1,108 @@
 @import url(/css/colorsheme.css);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-header{
-    width: 100%;
-    height: 65px;
-    padding: 1rem;
-    /* background-color: var(--color-secundario2); */
+header {
+	width: 100%;
+	height: 65px;
+	padding: 1rem;
+	/* background-color: var(--color-secundario2); */
 }
- header div.container{
-    display: flex;
-    justify-content: space-between;
-    
+header div.container {
+	display: flex;
+	justify-content: space-between;
 }
-div.container p{
-    font-family: var(--fuente-primaria);
-    font-size: clamp(1rem,2vw,2rem);
+div.container p {
+	font-family: var(--fuente-primaria);
+	font-size: clamp(1rem, 2vw, 2rem);
 }
-div.container a{
+div.container a {
 	color: #000;
 	text-decoration: none;
 }
-nav{
-    width: 55%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--fuente-primaria1);
-    font-size: clamp(1rem,1.5vw,1.75rem) ;
+nav {
+	width: 55%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--fuente-primaria1);
+	font-size: clamp(1rem, 1.5vw, 1.75rem);
 }
 
-nav ul li{
-    display: inline-block;
-    margin-right: 2.5rem;
+nav ul li {
+	display: inline-block;
+	margin-right: 2.5rem;
 }
-nav ul li:hover{
-    cursor: pointer;
-    color: var(--color-primario);
+nav ul li:hover {
+	cursor: pointer;
+	color: var(--color-primario);
 }
-i.fa.fa-shopping-cart:hover, i.fa.fa-user.aria-hidden:hover{
-    cursor: pointer;
-    color: var(--color-primario);
+.user_Cart i:hover {
+	cursor: pointer;
+	color: var(--color-primario);
 }
-i.fa.fa-user.aria-hidden:hover{
-    color: var(--color-primario);
+.banner img {
+	width: 100%;
 }
-.banner img{
-    width: 100%;
+/* section outfit */
+section {
+	margin-top: 5rem;
+}
+section h2 {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.section_outfit {
+	display: flex;
+	justify-content: space-evenly;
+}
+.section_outfits {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+.btn_outfit {
+	width: 150px;
+	height: 68px;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+.btn {
+	display: flex;
+	align-items: center;
+	color: rgb(5, 5, 5);
+	background: none;
+	border: none;
+	padding: 20px 18px;
+	position: relative;
+	font-size: 1rem;
+}
+.btn::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateY(calc(100% + 4 px));
+	width: 30px;
+	height: 30px;
+	background: var(--color-primario2);
+	border-radius: 50px;
+	transition: transform 0.25s 0.25s cubic-bezier(0, 0.5, 2),
+		width 0.25s cubic-bezier(0, 0, 0.5, 2);
+	z-index: -1;
+}
+.btn:hover::before {
+	width: 100%; /*abarca el 100% del boton*/
+	transform: translateY(-40%) translateX(-18px);
+	transition: transform 0.25s cubic-bezier(0, 0, 0.5, 2),
+		width 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2);
+}
+.btn i {
+	margin-left: 5px;
+	transition: transform 0.25s 0.4s cubic-bezier(0, 0.5, 2);
+}
+.btn:hover i {
+	transform: translateX(3px);
 }
