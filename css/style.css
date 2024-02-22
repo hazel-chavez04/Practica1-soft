@@ -181,5 +181,6 @@ footer{
 	margin-top: 3rem;
 }
 .container-footer{
+	display: flex;
   align-items: center;
 }
