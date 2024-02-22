@@ -6,7 +6,7 @@
 }
 header {
 	width: 100%;
-	height: 65px;
+	height: 68px;
 	padding: 1rem;
 	/* background-color: var(--color-secundario2); */
 }
@@ -105,4 +105,70 @@ section h2 {
 }
 .btn:hover i {
 	transform: translateX(3px);
+}
+div.img_sale{
+	display: flex;
+	margin-top: 2rem;
+	justify-content: space-evenly;
+	width: 100%;
+}
+.section_promo h2{
+	text-align: center;
+}
+.row_column{
+	display: flex;
+	justify-content: space-evenly;
+}
+.row_text {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 0.3rem;
+}
+.row_text p{
+	margin: 0 auto;
+	margin-top: 0.5rem;
+}
+.row_desc{
+	display: flex;
+    justify-content: space-evenly;
+}
+.row_desc p{
+	margin: 0 auto;
+}
+/* section masculina */
+.row_column2{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 1rem;
+}
+.row_text2 {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 0.3rem;
+}
+.row_text2 p{
+	margin: 0 auto;
+}
+.row_desc2{
+	display: flex;
+    justify-content: space-evenly;
+}
+.row_desc2 p{
+	margin: 0 auto;
+}
+.btn_buy {
+	display: flex;
+	justify-content: center;
+	margin-top: 1.8rem;
+}
+.btn_buy button{
+	padding: 0.7rem;
+	border: none;
+	border-radius: 5px;
+	color: #000;
+	background-color: var(--color-primario2);
+}
+.btn_buy button:hover{
+  color: var(--color-secundario2);
+  cursor: pointer;
 }
