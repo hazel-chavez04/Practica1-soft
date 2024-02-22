@@ -172,3 +172,14 @@ div.img_sale{
   color: var(--color-secundario2);
   cursor: pointer;
 }
+footer{
+	display: flex;
+	justify-content: center;
+	height: 75px;
+	background-color: #000;
+	color: #fff;
+	margin-top: 3rem;
+}
+.container-footer{
+  align-items: center;
+}
