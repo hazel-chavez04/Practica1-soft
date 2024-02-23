@@ -2,9 +2,10 @@
 :root{
     --color-primario: #845EC2;
     --color-primario2: #00C9A7;
-    --color-secundario:#F3C5FF;
+    --color-hover: #10a8a0;
     --color-secundario2: #FEFEDF;
-    --color-blanco: #ffff;
+    --color-texto: #FAF7FA;
+    --color-fondo: #0E090D;
     --fuente-primaria: 'Satisfy', cursive;
     --fuente-primaria1: sans-serif;
 }
