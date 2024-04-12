@@ -1,0 +1,64 @@
+@import url(./colorsheme.css);
+.section-form{
+    display: flex;
+
+    justify-content: center;
+    
+    
+}
+.section-form form{
+    width: 30vw;
+    height: auto;
+    padding: 3rem;
+    background-color: var(--color-form);
+    border-radius: 25px;
+    box-shadow: 10px 10px 264px 81px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 264px 81px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 264px 81px rgba(0,0,0,0.75);
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ h1{
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 2rem);
+
+}
+.form-login input {
+     margin-bottom: 1rem;
+     background-color: var(--input-bg);
+    height: 25px;
+    border: none;
+} 
+.form-login ::placeholder{
+    padding: 0.2rem;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+.submit button{
+    background-color:var(--color-primario2);
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .section-form form{
+        width:  52vw;
+    }
+    .form-login label{
+        display: flex;
+        flex-wrap: wrap;
+      justify-content: center;
+     
+    }
+    
+}
+
+
