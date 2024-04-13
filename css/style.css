@@ -175,6 +175,36 @@ div.img_sale {
 	background: var(--color-hover);
 	transition: ease-out 0.2s;
 }
+
+.btn-contactar {
+	position: relative;
+	display: inline;
+	cursor: pointer;
+	margin: 0.1rem;
+
+}
+.btn-contactar .tooltip{
+	       visibility: hidden;/*ocultar*/
+            background-color: var(--tooltip-bg);
+            color: var(--color-whatsapp);
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 5px;
+            position: absolute;
+            z-index: 1;
+             left: 100%; 
+			 top: 30%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+}
+
+div.btn-contactar:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+	filter: opacity(95%);
+	-webkit-filter: opacity(95%);
+	-moz-filter: opacity(95)
+} 
 footer {
 	display: flex;
 	justify-content: center;
