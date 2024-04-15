@@ -247,6 +247,32 @@ footer {
 	display: flex;
 	align-items: center;
 }
+.container-footer .social_icon{
+  position: relative;
+  left: 2rem;
+}
+.container-footer .social_icon i{
+	margin-right: 0.2rem;
+}
+i.fa.fa-facebook:hover{
+	color: var(--color-facebook);
+	transition: 0.1s ease-in-out;
+
+}
+i.fab.fa-instagram:hover{
+		color: 
+		
+		var(--color-instagram) ;
+		transition: 0.1s ease-in;
+}
+i.fa.fa-twitter:hover{
+	color: var(--color-twitter);
+	transition: 0.1s ease-in-out;
+}
+.container-footer .social_icon a{
+	text-decoration: none;
+	color: #f3ecec;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	/* para resoluciones moviles */
 	
