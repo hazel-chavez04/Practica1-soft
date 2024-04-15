@@ -29,15 +29,45 @@ nav {
 	font-family: var(--fuente-primaria1);
 	font-size: clamp(1rem, 1.5vw, 1.75rem);
 }
-
-nav ul li {
+nav li{
+	list-style: none;
+}
+nav li {
 	display: inline-block;
 	margin-right: 2.5rem;
 }
-nav ul li:hover {
+nav li:hover {
 	cursor: pointer;
 	color: var(--color-primario);
 }
+nav li:first-child a:hover{
+	cursor: pointer;
+	color: var(--color-primario);
+}
+
+.nav_subMenu{
+	position: absolute;
+	display: none;
+	width: 90px;
+	background-color: var(--color-bg);
+    opacity: 81%;
+	transition: opacity 0.6s ease;
+	padding: 0.5rem;
+}
+/* .nav_subMenu li a:hover {
+	cursor: pointer;
+	color: var(--color-primario);
+
+} */
+.nav_content li:hover .nav_subMenu{
+	display: block;
+	
+}
+
+.nav_subMenu .nav_subMenu {
+	display: block;
+}
+
 .user_Cart i:hover {
 	cursor: pointer;
 	color: var(--color-primario);
@@ -219,9 +249,22 @@ footer {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	/* para resoluciones moviles */
+	
 	nav {
-		flex-direction: column;
+		display: flex;
+		justify-content: center;
+	    flex-direction: row;
+	
 	}
+	.nav_content {
+       flex: 1;
+	   position: relative;
+	   left: 1rem;
+	}
+	.nav_content li:nth-child(n+4){
+		display: none;
+	}
+	
 	.user_Cart {
 		display: none;
 	}
